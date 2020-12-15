@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HOST';
+  countries = ['America', 'China', 'India'];
+  
+  ngOnInit() {
+    console.log(this.countries);
+  }
+  onOptionsSelected(value) {
+    console.log(value);
+  }
 }
